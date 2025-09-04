@@ -1,2 +1,2 @@
-# Survival-Game-Demo
+# 1vs100-Game-Demo
 game demo for final
