@@ -1,4 +1,4 @@
-# Game for Final Brainstorm
+# Game for Final - Brainstorm
 Genre: Survival Topdown
 Target Audience: Ages 5 and up
 Unique Gameplay Mechanics: Looting, Food/Water management
