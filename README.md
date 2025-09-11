@@ -12,5 +12,6 @@ Art Style: 2D Pixel Art
 
 Tools to develop and express the game:
 - Unity Game Engine
+- Free Assets
 
 
