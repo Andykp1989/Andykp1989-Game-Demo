@@ -8,7 +8,7 @@ public class BoxBehavior : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //find the GameManager and call the CollectBox method
-            GameManager gameManager = FindObjectOfType<GameManager>();
+            GameManager gameManager = FindFirstObjectByType<GameManager>();
             if (gameManager != null)
             {
                 gameManager.CollectBox();
