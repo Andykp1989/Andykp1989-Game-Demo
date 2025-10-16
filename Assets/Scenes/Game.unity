@@ -657,52 +657,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
   m_PrefabInstance: {fileID: 2070428814}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &730005137
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730005120}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.66855955, y: 2.5526896}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 5.740714, y: 5.0113773}
-  m_EdgeRadius: 0
 --- !u!50 &730005138
 Rigidbody2D:
   serializedVersion: 5
@@ -772,7 +726,7 @@ MonoBehaviour:
     m_ActionId: 564bbf07-4ed6-45c4-ae13-999e75a1ad4c
     m_ActionName: 'Tank/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Tank
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -789,6 +743,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankControllerV2
   moveSpeed: 5
+--- !u!70 &730005145
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730005120}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.14615297, y: 3.0692077}
+  m_Size: {x: 4.132943, y: 6.1362314}
+  m_Direction: 0
 --- !u!1 &989523977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,16 +1334,16 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 730005141}
+    - targetCorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 730005138}
     - targetCorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 730005137}
+      addedObject: {fileID: 730005145}
     - targetCorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 730005140}
-    - targetCorrespondingSourceObject: {fileID: 5397402859597699206, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 730005141}
   m_SourcePrefab: {fileID: 100100000, guid: dcafe2b96299361499fbfded17401c6b, type: 3}
 --- !u!1 &2079011262
 GameObject:
